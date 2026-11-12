@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareCoimbatore | Healthcare Made Simple</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            Care<span>Coimbatore</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#hospitals">Hospitals</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#booking" class="nav-button">Book Appointment</a>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="tagline">YOUR HEALTH, OUR PRIORITY</p>
+
+            <h1>
+                Better Healthcare.<br>
+                <span>One Platform.</span>
+            </h1>
+
+            <p>
+                Discover hospitals, find available doctors
+                and book medical appointments easily
+                through one unified platform in Coimbatore.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#booking" class="primary-button">
+                    Book an Appointment
+                </a>
+
+                <a href="#hospitals" class="secondary-button">
+                    Explore Hospitals
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Services -->
+    <section class="services" id="services">
+
+        <h2>Healthcare Services</h2>
+
+        <p>Everything you need to manage your healthcare.</p>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <h3>Find Hospitals</h3>
+                <p>Discover multiple hospitals in Coimbatore.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Find Doctors</h3>
+                <p>Explore doctors by medical specialization.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Book Appointments</h3>
+                <p>Request appointments with available doctors.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Hospital Section -->
+    <section class="hospitals" id="hospitals">
+
+        <h2>Multi-Hospital Healthcare Network</h2>
+
+        <p>
+            Access healthcare services through one
+            convenient digital platform.
+        </p>
+
+        <div class="hospital-placeholder">
+            Hospital listings will appear here.
+        </div>
+
+    </section>
+
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+    <h2>Ready to Book an Appointment?</h2>
+    <p>Fill in the details and we will confirm your slot.</p>
+
+    <form id="bookingForm" class="booking-form">
+        <input type="text" id="patientName" placeholder="Patient Name" required>
+        <input type="tel" id="mobile" placeholder="Mobile Number" maxlength="10" pattern="[0-9]{10}" required>
+
+        <select id="bookingType" required>
+            <option value="">Type of Booking</option>
+            <option>General Consultation</option>
+            <option>Specialist Consultation</option>
+            <option>Health Checkup</option>
+            <option>Follow-up Visit</option>
+            <option>Child Specialist (Pediatrics)</option>
+<option>Women's Health (Gynecology)</option>
+<option>Heart Checkup (Cardiology)</option>
+<option>Bone and Joint (Orthopedics)</option>
+<option>Eye Checkup</option>
+<option>Dental Checkup</option>
+<option>Skin Consultation</option>
+<option>Lab Tests / Scan</option>
+<option>Vaccination</option>
+        </select>
+
+        <select id="hospital" required>
+            
+            <option value="">Preferred Hospital</option>
+        </select>
+
+        <input type="date" id="apptDate" required>
+        <input type="time" id="apptTime" required>
+
+        <button type="submit">Confirm Booking</button>
+    </form>
+
+    <p id="bookingResult" class="booking-result"></p>
+    <div id="receipt" class="receipt" style="display:none"></div>
+</section>
+
+
+    <!-- Footer -->
+    <footer id="about">
+
+        <h3>CareCoimbatore</h3>
+
+        <p>Connecting patients, doctors and hospitals.</p>
+
+        <p>© 2026 CareCoimbatore. Academic Project.</p>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
